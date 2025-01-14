@@ -1,0 +1,106 @@
+<div class="d-flex justify-content-center flex-column align-items-center all">
+  <h2>portfolio component</h2>
+  <div class="star d-flex justify-content-between align-items-center">
+    <div class="line"></div>
+    <i class="fa-solid fa-star"></i>
+    <div class="line"></div>
+  </div>
+</div>
+<div class="container mb-3">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div
+        class="inner position-relative"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        (click)="setSrc('img/poert1.png')"
+      >
+        <div class="overlay position-absolute top-0 start-0 end-0 bottom-0">
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <img src="img/poert1.png" alt="" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div
+        class="inner position-relative"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        (click)="setSrc('img/port2.png')"
+      >
+        <div class="overlay position-absolute top-0 start-0 end-0 bottom-0">
+          <div class="plus"><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <img src="img/port2.png" alt="" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div
+        class="inner position-relative"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        (click)="setSrc('img/port3.png')"
+      >
+        <div class="overlay position-absolute top-0 start-0 end-0 bottom-0">
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <img src="img/port3.png" alt="" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div
+        class="inner position-relative"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        (click)="setSrc('img/poert1.png')"
+      >
+        <div class="overlay position-absolute top-0 start-0 end-0 bottom-0">
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <img src="img/poert1.png" alt="" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div
+        class="inner position-relative"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        (click)="setSrc('img/port2.png')"
+      >
+        <div class="overlay position-absolute top-0 start-0 end-0 bottom-0">
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <img src="img/port2.png" alt="" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div
+        class="inner position-relative"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        (click)="setSrc('img/port3.png')"
+      >
+        <div class="overlay position-absolute top-0 start-0 end-0 bottom-0">
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <img src="img/port3.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img [src]="Imgsrc" class="w-100" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
