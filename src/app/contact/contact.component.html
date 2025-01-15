@@ -7,27 +7,38 @@
   </div>
 </div>
 <div class="container w-50 mb-5">
+  <label [class.visible]="nameValue" for="name">Username:</label>
   <input
-    class="form-control"
     type="text"
+    id="name"
+    class="form-control"
+    [(ngModel)]="nameValue"
     placeholder="userName"
     aria-label="default input example"
   />
+  <label [class.visible]="ageValue" for="userAge">UserAge:</label>
   <input
     class="form-control"
     type="text"
+    [(ngModel)]="ageValue"
     placeholder="userAge"
     aria-label="default input example"
   />
+  <label [class.visible]="emailValue" for="userEmail">UserEmail:</label>
   <input
     class="form-control form-control-sm"
     type="text"
+    [(ngModel)]="emailValue"
     placeholder="userEmail"
     aria-label=".form-control-sm example"
   />
+  <label [class.visible]="passwordValue" for="userPassword"
+    >UserPassword:</label
+  >
   <input
     class="form-control form-control-sm"
-    type="text"
+    type="password"
+    [(ngModel)]="passwordValue"
     placeholder="userPassword"
     aria-label=".form-control-sm example"
   />
